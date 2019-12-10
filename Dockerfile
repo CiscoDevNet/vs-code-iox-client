@@ -24,10 +24,17 @@ RUN apt-get update && apt-get install -y \
    && apt-get update && apt-get install -y docker-ce
 
 # ioxclient install
-RUN curl -O https://pubhub.devnetcloud.com/media/iox/docs/artifacts/ioxclient/ioxclient-v1.7.2.1/ioxclient_1.7.2.1_linux_amd64.tar.gz \
-    && tar xvzf ioxclient_1.7.2.1_linux_amd64.tar.gz \
-    && chmod +x ioxclient_1.7.2.1_linux_amd64/ioxclient \
-    && cp ioxclient_1.7.2.1_linux_amd64/ioxclient /usr/local/bin/ioxclient
+#RUN curl -O https://pubhub.devnetcloud.com/media/iox/docs/artifacts/ioxclient/ioxclient-v1.7.2.1/ioxclient_1.7.2.1_linux_amd64.tar.gz \
+#    && tar xvzf ioxclient_1.7.2.1_linux_amd64.tar.gz \
+#    && chmod +x ioxclient_1.7.2.1_linux_amd64/ioxclient \
+#    && cp ioxclient_1.7.2.1_linux_amd64/ioxclient /usr/local/bin/ioxclient
+
+# ioxclient install from local file
+COPY ioxclient_1.9.2.0_linux_amd64.tar.gz .
+RUN tar xvzf ioxclient_1.9.2.0_linux_amd64.tar.gz \
+    && chmod +x ioxclient_1.9.2.0_linux_amd64/ioxclient \
+    && cp ioxclient_1.9.2.0_linux_amd64/ioxclient /usr/local/bin/ioxclient
+
 
 # Powershell install
 RUN wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.4_amd64.deb \
