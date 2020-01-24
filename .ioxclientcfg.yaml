@@ -16,5 +16,5 @@ author:
   link: cisco
 profiles: {default: {host_ip: 127.0.0.1, host_port: 8443, auth_keys: cm9vdDo=, auth_token: "",
     local_repo: /software/downloads, api_prefix: /iox/api/v2/hosting/, url_scheme: https,
-    ssh_port: 2222, rsa_key: "", certificate: "", cpu_architecture: "", middleware: {
+    ssh_port: 22, rsa_key: "", certificate: "", cpu_architecture: "", middleware: {
       mw_ip: "", mw_port: "", mw_baseuri: "", mw_urlscheme: "", mw_access_token: ""}}}
