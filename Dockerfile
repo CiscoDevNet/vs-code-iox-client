@@ -34,6 +34,7 @@ COPY ioxclient_1.9.2.0_linux_amd64.tar.gz .
 RUN tar xvzf ioxclient_1.9.2.0_linux_amd64.tar.gz \
     && chmod +x ioxclient_1.9.2.0_linux_amd64/ioxclient \
     && cp ioxclient_1.9.2.0_linux_amd64/ioxclient /usr/local/bin/ioxclient
+COPY .ioxclientcfg.yaml /root/.ioxclientcfg.yaml
 
 
 # Powershell install

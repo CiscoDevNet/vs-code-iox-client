@@ -7,7 +7,7 @@ Use Example Video provided with the below instructions.
 * Use the following command in your terminal window
 
 ```
-docker run --privileged -it -p 8000:8000 -p 8080:8080 -e PASSWORD='ioxtest' ciscodevnet/vs-code-iox-client:ioxclient_1_9_2_test
+docker run --privileged -it -p 8000:8000 -p 8080:8080 -e PASSWORD='ioxtest' ciscodevnet/vs-code-iox-client:ioxclient_1_9_2
 ```
 
 * Open your browser window to http://127.0.0.1:8080
@@ -27,7 +27,7 @@ git clone https://github.com/CiscoDevNet/iox-docker-python-web.git
 and then use
 
 ```
-git checkout iox-1-9-2-test
+git checkout iox-1-9-2
 ```
 
 * In the browser based VS Code Open the folder we just created after downloading our git repo

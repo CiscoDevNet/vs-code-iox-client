@@ -1,0 +1,21 @@
+{
+    "resources": {
+      "profile": "custom",
+      "network": [
+        {
+          "interface-name": "eth0",
+          "network-name": "iox-nat_docker0",
+          "description": "iox docker engine test",
+          "port_map": {
+            "mode": "1to1"
+          }
+        }
+      ],
+      "cpu": 100,
+      "memory": 100,
+      "disk": "10"
+    },
+    "startup": {
+      "runtime_options": "  "
+    }
+  }
